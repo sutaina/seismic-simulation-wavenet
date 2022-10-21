@@ -7,7 +7,9 @@ Created on Sat Jan 12 16:57:30 2019
 """
 
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_eager_execution()
 import matplotlib.pyplot as plt
 
 class SeismicDataset:

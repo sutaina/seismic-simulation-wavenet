@@ -14,7 +14,9 @@ Created on Sat Jan 12 16:57:30 2019
 import sys
 import matplotlib
 if 'linux' in sys.platform.lower(): matplotlib.use('Agg')# use a non-interactive backend if on remote server (plotting without windows)
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_eager_execution()
 import numpy as np
 
 from constants import Constants

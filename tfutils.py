@@ -13,7 +13,7 @@ def w(shape, stddev=0.01, mean=0.0, name=None):
     """
     Returns a weight layer with the given shape and standard deviation. Initialized with a normal distribution.
     """
-    return tf.Variable(tf.random_normal(shape, stddev=stddev, mean=mean), name=name)
+    return tf.Variable(tf.random.normal(shape, stddev=stddev, mean=mean), name=name)
 
 
 def b(shape, const=0.1, name=None):
